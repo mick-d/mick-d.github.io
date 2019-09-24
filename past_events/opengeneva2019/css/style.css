@@ -735,10 +735,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px 20px 20px;
 }
 
-#about table, tr, td {
-  font-size: 14px;
-}
-
 
 /* Call To Action Section
 --------------------------------*/
@@ -983,24 +979,24 @@ and center it
 }
 */
 
-#portfolio .portfolio-item figure .link-preview {
-  left: calc(50% - 18px);
+#portfolio .portfolio-item figure .link-details {
+  left: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#portfolio .portfolio-item figure .link-details {
-  right: calc(50% - 18px);
+#portfolio .portfolio-item figure:hover .link-details {
+  opacity: 1;
+  left: calc(50% - 44px);
+}
+
+#portfolio .portfolio-item figure .link-preview {
+  right: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
 #portfolio .portfolio-item figure:hover .link-preview {
   opacity: 1;
-  left: calc(50% - 18px);
-}
-
-#portfolio .portfolio-item figure:hover .link-details {
-  opacity: 1;
-  right: calc(50% - 18px);
+  right: calc(50% - 44px);
 }
 
 #portfolio .portfolio-item .portfolio-info {
@@ -1688,6 +1684,7 @@ span.protectedNumber:before {
   #nav-menu-container {
     padding-right: 60px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1714,4 +1711,19 @@ span.protectedNumber:before {
   #mobile-nav-toggle {
     display: inline;
   }
+
+/* MD: adjusting group images */
+
+  #groups img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
 }
+
+/* MD: trying to configure groups */
+
+  #groups .carousel-control-prev,
+  #groups .carousel-control-next {
+    width: 5%;
+  }

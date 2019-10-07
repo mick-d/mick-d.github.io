@@ -920,13 +920,27 @@ Abstract: We will introduce the human lesion method and discuss its interest and
           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/projects/template3.jpg" class="img-fluid" alt="">
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-eye"></i></a>
+                <img src="img/projects/BGG2019_MRI_music.jpg" class="img-fluid" alt="">
+                <a href="#MRI_music" class="link-details" title="More Details"><i class="ion ion-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Project to be announced</a></h4>
-                <p>by TBA</p>
+                <h4><a href="#MRI_music">Hearing fMRI data</a></h4>
+                <p>by Thomas Bolton and Raphael Liegois</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/projects/BGG2019_superres-mri.jpg" class="img-fluid" alt="">
+                <a href="#MRI_superres" class="link-details" title="More Details"><i class="ion ion-eye"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#MRI_superres">SINAPP (Modular BIDS App) for Motion-robust Super-Resolution MRI</a></h4>
+                <p>by Sebastien Tourbier</p>
               </div>
             </div>
           </div>
@@ -1085,9 +1099,37 @@ Abstract: We will introduce the human lesion method and discuss its interest and
           </figure>
           Microstates are transient, quasi-stable patterns of eeg scalp topography. It has been shown that psychiatric disorders elicit abnormal quantity of one of these microstates. This project aims at developing a neuro-feedback to regulate this microstate.
 
+         <figure id="MRI_music">
+            <h3> Project 3. <span style="font-weight:bold">Hearing fMRI data</span> by <a href="#thomas_b">Thomas Bolton</a> and <a href="#raphael_l">Raphael Liegois</a> </h3>
+            <img src="img/projects/BGG2019_MRI_music.jpg" class="mx-auto d-block" alt=""  width=100%>
+          </figure>
+		Functional magnetic resonance imaging (fMRI) enables to measure activity time courses at the whole-brain scale. In this project, we will be using standardly preprocessed data of size 360 (brain regions) x 1190 (time points) acquired during the resting-state (i.e., scanned volunteers let their mind wander without performing any external task).
+
+		The large majority of fMRI analyses ultimately give rise to results figures, which are laid on paper and visually interpreted. Our goal will be to instead generate an audio recording that reflects functional brain processing as a melody.
+
+		The project will require: 
+
+		1) The definition of a pipeline to generate such audio data, which may be jointly informed by knowledge about fMRI data and music
+		2) The implementation of the pipeline, and generation of sound waveforms
+		3) The analysis of a series of outputs generated from a set of healthy subjects 
+
+         <figure id="MRI_superres">
+            <h3> Project 4. <span style="font-weight:bold">SINAPP (Modular BIDS App) for Motion-robust Super-Resolution MRI</span> by <a href="#thomas_b">Sebastien Tourbier</a> </h3>
+            <img src="img/projects/BGG2019_superres-mri.jpg" class="mx-auto d-block" alt=""  width=100%>
+          </figure>
+		This project started at a previous brainhack (cf <a href="#https://github.com/brainhack-ch/superres-mri">related github repository</a>) and aims to develop a modular pipeline packaged as a SINAPP (Modular BIDS App) which uses the Medical Image Analysis Laboratory Super-Resolution ToolKit (MIALSRTK), a set of C++ image processing tools, to perform motion-robust super-resolution of fetal brain MRI. 
+
+		It integrates new advances in the neuroimaging field over the past three years including:
+		* the Brain Imaging Data Structure (BIDS), a standard to organize and describe neuroimaging data,
+		* and the BIDS App framework based on software containerization, which promotes reproducibility and portability.
+
+		Please see <a href="https://github.com/brainhack-ch/superres-mri/blob/master/resources/slides/BrainHack2019.pdf">this presentation</a> which presents the achievements and perspectives of the project.
+
         </div>
       </div>
     </section>
+
+
 
 
 
@@ -1198,6 +1240,24 @@ Abstract: We will introduce the human lesion method and discuss its interest and
                   <h4 class="title"><a href="https://www.linkedin.com/in/arnaud-desvachez/">Arnaud Desvachez</a></h4>
                   <p class="description">Arnaud's expertise: bci, neuro-feedback, eeg</p>
                 </div>
+                <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" id="thomas_b">
+                  <img src="img/instigators/thomas_bolton.jpg" class="img-fluid" alt="">
+                  <h4 class="title"><a href="https://miplab.epfl.ch/index.php/people/bolton">Thomas Bolton</a></h4>
+                  <p class="description">Thomas's expertise: fMRI analysis, dynamic functional connectivity, hidden Markov models, graph signal processing</p>
+                </div>
+                <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" id="raphael_l">
+                  <img src="img/instigators/raphael_liegois.png" class="img-fluid" alt="">
+                  <h4 class="title"><a href="https://sites.google.com/raphael-liegeois.eu/home">Raphael Liegois</a></h4>
+                  <p class="description">Raphael's expertise:  brain connectivity, dynamical systems theory, functional MRI</p>
+                </div>         
+              </div>
+
+              <div class="row">
+                <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" id="seb_t">
+                  <img src="img/instigators/sebastien_tourbier.jpeg" class="img-fluid" alt="">
+                  <h4 class="title"><a href="https://www.researchgate.net/profile/Sebastien_Tourbier">Sebastien Tourbier</a></h4>
+                  <p class="description">Seb' expertise: C++/Python, Docker, Reproducible processing Workflows, Super-Resolution</p>
+                </div>
                 <div class="col-lg-3 col-md-6 box wow bounceInUp" data-wow-duration="1.4s" id="michael_d">
                   <img src="img/instigators/woman_profile.png" class="img-fluid" alt="">
                   <h4 class="title"><a href="">TBA</a></h4>
@@ -1207,7 +1267,7 @@ Abstract: We will introduce the human lesion method and discuss its interest and
                   <img src="img/instigators/man_profile.png" class="img-fluid" alt="">
                   <h4 class="title"><a href="">TBA</a></h4>
                   <p class="description">TBA's expertise: to be announced</p>
-                </div>       
+                </div> 
               </div>
 
 <!-- Previous instigators

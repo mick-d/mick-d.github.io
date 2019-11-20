@@ -735,6 +735,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px 20px 20px;
 }
 
+#about table, tr, td {
+  font-size: 14px;
+}
 
 /* Call To Action Section
 --------------------------------*/

@@ -161,11 +161,20 @@
   });
 
   // Skills section
+  /* MD: change as according to stack overflow post
   $('#skills').waypoint(function() {
     $('.progress .progress-bar').each(function() {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
   }, { offset: '80%'} );
+*/
+$('.skills').waypoint(function() {
+  var el = this.element;
+  var children = $(el).find(".progress-bar");
+  $(children).each(function() {
+    $(this).css("width", $(this).attr("aria-valuenow") + '%');
+  });
+}, { offset: '80%'} );
 
   // jQuery counterUp (used in Facts section)
   $('[data-toggle="counter-up"]').counterUp({
